@@ -26,7 +26,7 @@ This guide explains how to install **gzip** on Linux and create a deployment arc
 
 ---
 
-##  Install gzip
+##  1 Install gzip
 
 Most Linux distributions come with gzip pre-installed. To check if gzip is installed, run:
 
@@ -49,7 +49,7 @@ On REHL/CentOs/Fedora
 sudo yum install gzip -y
 ```
 
-# 2️⃣ Prepare the Deploy Folder
+# 2 Prepare the Deploy Folder
 
 Ensure you have a folder named Deploy containing only the files needed for deployment. Example structure:
 ```
@@ -70,7 +70,7 @@ npm ci --only=production
 ```
 dotnet publish -c Release -o Deploy
 ```
-# 3️⃣ Create a Deployment Archive
+# 3️ Create a Deployment Archive
 
 Use tar with gzip to compress the folder:
 
@@ -93,7 +93,7 @@ tar -czf app.tar.gz -C Deploy .
 
 This will generate a fast, compressed archive named app.tar.gz ready for deployment.
 
-# 4️⃣ Optional: Fast Compression Mode
+# 4️ Optional: Fast Compression Mode
 To prioritize speed over maximum compression:
 
 ```
@@ -103,7 +103,7 @@ tar -czf app.tar.gz -C Deploy . --fast
 
 Ideal for large directories like node_modules or photos
 
-# 5️⃣ Verify the Archive
+# 5️ Verify the Archive
 
 To check the contents of the archive:
 
