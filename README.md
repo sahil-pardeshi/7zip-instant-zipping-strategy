@@ -1,4 +1,4 @@
-# 7zip-instant-zipping-strategy
+# 7zip-instant-zipping-strategy.
    Create Zip of Artifact After Build With Less Time
 
 # For windows Install:
